@@ -1,0 +1,30 @@
+<div className="card">
+    <img className="nft-image" src="{nftImageSrc}" alt="nft"/>
+    <div className="wrapper">
+    <div className="info-container">
+        <p className="owner">studioThirteen</p>
+        <p className="name">nftName</p>
+    </div>
+
+    <div className="price-container">
+        <p className="price-label">price</p>
+        <p className="price">
+        <FaEthereum /> 4.555
+        </p>
+    </div>
+    </div>
+    <div className="buttons">
+    <button className="buy-now">Buy Now</button>
+    <div className="like-container">
+        <button className="like" onClick={like}>
+        {!isLike ? (
+            <AiOutlineHeart size="30" color="white" />
+        ) : (
+            <AiFillHeart size="30" color="#00f5c966" style={{stroke: "-webkit-linear-gradient(to bottom,#38ef7d,#11998e)"}} />
+            )}
+        </button>
+        <p className="like-count">123</p>
+    </div>
+    </div>
+
+</div>
